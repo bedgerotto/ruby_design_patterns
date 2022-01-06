@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'test/unit'
-require_relative '../report'
+require_relative 'template_method'
 
 class ReportTest < Test::Unit::TestCase
   def test_output_head_raises_exception

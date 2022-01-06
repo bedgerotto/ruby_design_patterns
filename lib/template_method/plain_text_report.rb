@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class PlainTextReport < Report
   def output_start; end
 

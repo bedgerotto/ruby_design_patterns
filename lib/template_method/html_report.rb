@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class HtmlReport < Report
   def output_start
     puts('<html>')
