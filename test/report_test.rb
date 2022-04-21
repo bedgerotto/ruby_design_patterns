@@ -12,3 +12,4 @@ class ReportTest < Test::Unit::TestCase
     end
   end
 end
+
