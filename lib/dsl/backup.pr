@@ -1,0 +1,21 @@
+# backup '/mnt/c/Users/bedge/Downloads', file_name('*.txt')
+
+# backup '/mnt/c/Users/bedge/Music', file_name('*.mp3') & file_name('*.wav')
+
+# backup '/mnt/c/Users/bedge/Pictures', except(file_name('*.tmp'))
+
+# to '/mnt/c/Users/bedge/Backup'
+
+# interval 10
+
+Backup.new do |b|
+  b.backup '/mnt/c/Users/bedge/Music', b.file_name('*.mp3') | b.file_name('*.wav')
+  b.to '/mnt/c/Users/bedge/Backup'
+  b.interval 60
+end
+
+Backup.new do |b|
+  b.backup '/mnt/c/Users/bedge/Music', b.file_name('*.mp3') | b.file_name('*.wav')
+  b.to '/mnt/c/Users/bedge/Backup'
+  b.interval 60
+end
